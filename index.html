@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main ">
+
+      <div class="left">
+        <div class="description">
+          <h1>Life Clock</h1>
+          <h3>Explore your timeline</h3>
+        </div>
+      </div>
+      
+        <div class="right">
+
+          <div class="container1">
+            <div>
+              <h2>Calculate to Current Date</h2>
+            </div>  
+            <div class="input1">
+              <input type="date" id="date1-input1" />
+              <div class="buttons">
+                <button id="calc-age-btn1">Hit Me</button>
+                <button id="reset-btn1">Reset</button>
+              </div>
+            </div>
+            <div class="error" id="GeneratedTxt1"></div>
+            
+            <div class="output1">
+              <div>
+                <span id="years-output1">-</span>
+                <p>Years</p>
+              </div>
+              <div>
+                <span id="months-output1">-</span>
+                <p>Months</p>
+              </div>
+              <div>
+                <span id="days-output1">-</span>
+                <p>Days</p>
+              </div>
+            </div>
+          </div>
+
+  
+          <div class="container2">
+            <div>
+              <h2>Calculate to Given Date</h2>
+            </div>
+            <div class="input2">
+              <input type="date" id="date1-input2" />
+            </div>
+            <div class="error" id="GeneratedTxt2"></div>
+            <div class="input3">
+              <input type="date" id="date2-input2" />
+              <div class="buttons">
+                <button id="calc-age-btn2">Hit Me</button>
+                <button id="reset-btn2">Reset</button>
+              </div>
+            </div>
+            <div class="error" id="GeneratedTxt3"></div>
+            <div class="output2">
+              <div>
+                <span id="years-output2">-</span>
+                <p>Years</p>
+              </div>
+              <div>
+                <span id="months-output2">-</span>
+                <p>Months</p>
+              </div>
+              <div>
+                <span id="days-output2">-</span>
+                <p>Days</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
