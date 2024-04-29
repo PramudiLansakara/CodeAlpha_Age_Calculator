@@ -16,14 +16,14 @@ const ageCalculateUptoToday = () => {
   
     if (isFutureDate(birthDetails, currentYear, currentMonth, currentDate)) {
       document.getElementById("GeneratedTxt1").textContent =
-        "Birthdate can not be a future date";
+        "Birthdate can not be a future date.";
       displayResult1("-", "-", "-");
       return;
     }
   
     if (isNaN(inputDate.getTime())) {
       document.getElementById("GeneratedTxt1").textContent =
-        "Please enter a date.";
+        "Please enter your birthdate.";
       displayResult1("-", "-", "-");
       return;
     }
@@ -46,12 +46,12 @@ const ageCalculateBetweenGivenDays = () => {
   const endDate = new Date(document.getElementById("date2-input2").value);
 
   if(isNaN(startDate.getTime()) && isNaN(endDate.getTime())){
-    document.getElementById("GeneratedTxt2").textContent = "Please enter a valid date.";
-    document.getElementById("GeneratedTxt3").textContent = "Please enter a valid date.";
+    document.getElementById("GeneratedTxt2").textContent = "Please enter your birthdate.";
+    document.getElementById("GeneratedTxt3").textContent = "Please enter a date.";
     displayResult2("-", "-", "-");
     return;
   }else if(isNaN(startDate.getTime())){
-    document.getElementById("GeneratedTxt2").textContent = "Please enter a date.";
+    document.getElementById("GeneratedTxt2").textContent = "Please enter your birthdate.";
     displayResult2("-", "-", "-");
     return;
   }else if(isNaN(endDate.getTime())){
@@ -61,7 +61,7 @@ const ageCalculateBetweenGivenDays = () => {
   }
 
   if (startDate > endDate) {
-      document.getElementById("GeneratedTxt2").textContent = "Start date cannot be greater than end date";
+      document.getElementById("GeneratedTxt2").textContent = "Please select a date later than the birthdate.";
       displayResult2("-", "-", "-");
       return;
   }
